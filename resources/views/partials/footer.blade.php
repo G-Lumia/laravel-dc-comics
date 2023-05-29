@@ -20,4 +20,5 @@
             <img class="logo" src="{{URL::asset('/images/dc-logo-bg.png')}}" alt="logo bg">
         </div>
     </div>
+
 </footer>

@@ -1,8 +1,8 @@
 @extends('layouts.app');
 
 @section('content')
-    <section class="container my-4">
-        <form class="text-light text-dark" action="{{route('comics.store')}}" method="POST">
+    <section class="container py-4">
+        <form class="text-light" action="{{route('comics.store')}}" method="POST">
             @csrf
 
             <div class="mb-3">

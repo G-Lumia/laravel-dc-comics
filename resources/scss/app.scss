@@ -10,34 +10,153 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-header {
+a{
+    text-decoration: none;
+}
+
+// header
+
+header
+{
     height:15vh;
 }
 
-header div{
+header div
+{
     height:100%;
 }
 
-img{
-    width:250px;
-}
-header a{
+header div img
+  {
+      width:150px;
+  }
+
+  header a
+  {
     color:gray;
     font-size: 1.6rem;
     height: 100%;
     display:flex;
     align-items: center;
     position: relative;
-}
-
-header{
-    background-color: white;
-}
-
-.container{
-    max-width: 80%;
   }
+  header a:hover:after
+  {
+    position: absolute;
+    content: "";
+    left:0;
+    bottom:0;
+    width:100%;
+    height:8px;
+    background-color: #0C7CEC
+}
+
+// main
+main
+{
+    background-color: black;
+    height:fit-content;
+}
+h1,h3
+{
+    color: white;
+}
+.imageLink
+{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+
+.imageLink img
+{
+    width:80px;
+}
+
+.jumbotron
+{
+    width:100%;
+    height:30vh;
+    background-image: url(/public/images/jumbotron.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+// card
+
+.cropped
+{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position:top;
+}
+.thumb
+{
+    width: 300px;
+    height: 300px;
+}
+
+.card
+{
+    background-color: transparent;
+    width: 400px;
+}
+
+// footer
+
+footer{
+    max-height:40vh; height: fit-content;
+}
+
+.foot{
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size:cover;
+    height:80%;
+    position:relative;
+    overflow: hidden;
+
+}
+
+.links{
+    height: 100%;
+}
+.logo{
+    position:absolute;
+    height: 130%;
+    right:10%;
+}
+
+h1{
+    color:white;
+}
 
 a{
-    text-decoration: none;
+    color:gray;
+    font-size: 1.4rem;
+    &:hover{
+        color:lightblue;
+    }
+}
+.footerLinks{
+    background-color: darkgrey;
+    height: 20%;
+}
+
+.footerLinks .container{
+    height: 100%;
+}
+
+.footerLinks img{
+    width:50px;
+}
+
+.footerLinks a{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.signUp{
+    border : 8px solid black;
 }
