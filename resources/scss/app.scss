@@ -8,4 +8,36 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
-@import '~bootstrap/scss/bootstrap';"
+@import '~bootstrap/scss/bootstrap';
+
+header {
+    height:15vh;
+}
+
+header div{
+    height:100%;
+}
+
+img{
+    width:250px;
+}
+header a{
+    color:gray;
+    font-size: 1.6rem;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+
+header{
+    background-color: white;
+}
+
+.container{
+    max-width: 80%;
+  }
+
+a{
+    text-decoration: none;
+}
