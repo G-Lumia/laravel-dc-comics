@@ -23,7 +23,7 @@
                 </div>
             @endforeach
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 m-3 align-self-center">
-                <button class="btn btn-light">
+                <button class="btn btn-light thumb">
                     <a href="{{ route('comics.create') }}">
                         Crea un nuovo fumetto
                     </a>
