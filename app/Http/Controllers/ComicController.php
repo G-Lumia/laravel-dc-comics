@@ -65,7 +65,8 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        $data = config("db");
+        return view('comics.edit' , compact('comic' , 'data'));
     }
 
     /**
@@ -77,7 +78,10 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+        $comic->update($data);
+        $data = config("db");
+        return view('comics.show', compact('comic' , 'data'));
     }
 
     /**
@@ -88,6 +92,8 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $title = $comic->title;
+        $comic->delete();
+        return redirect()->route('home')->with('success', $title . ' deleted');
     }
 }
