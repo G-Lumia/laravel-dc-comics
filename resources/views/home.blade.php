@@ -30,7 +30,7 @@
                                 <form action="{{ route('comics.destroy', $comic) }}" method="POST">
                                     @csrf
                                     @method('DELETE');
-                                    <input class="btn btn-danger" type="submit" value="Delete">
+                                    <input class="btn btn-danger delete-button" type="submit" value="Delete">
                                 </form>
                             </div>
                         </div>
@@ -47,4 +47,5 @@
             </div>
         </div>
     </section>
+    @include('partials.popupDelete');
 @endsection
