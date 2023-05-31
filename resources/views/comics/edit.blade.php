@@ -2,8 +2,10 @@
 
 @section('content')
     <section class="container py-4">
-        <form class="text-light" action="{{route('comics.store')}}" method="POST">
+        <form class="text-light" action="{{ route('comics.update' , ($comic->id)) }}" method="POST">
             @csrf
+
+            @method('PUT')
 
             <div class="mb-3">
                 <label for="title" class="form-label">Titolo </label>
